@@ -80,7 +80,23 @@ border-bottom: 1px solid #511ad1; /*bordinha embaixo*/
     background-color: transparent;
     border-image: linear-gradient(#986dff, #502ca4);
     border-image-slice: 10;
-    border-radius: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+  }
+  .banner button:hover{
+    color: #5ac1f8;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1); /* Escala inicial */
+    }
+    50% {
+      transform: scale(1.05); /* Escala maior no meio da animação */
+    }
+    100% {
+      transform: scale(1); /* Retorna à escala inicial */
+    }
   }
   
   #course-content{
